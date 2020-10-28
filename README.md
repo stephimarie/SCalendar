@@ -1,0 +1,2 @@
+# SCalendar
+A live calendar
