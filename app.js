@@ -1,12 +1,12 @@
 $(document).ready(function () {
 
     console.log(parseInt(moment().format('H')))
-  
+    // Current day
     const currentTime = moment().format('Do YYYY MMMM')
     $("#currentTime").text(currentTime)
     $("span").attr("style", "width: 75px")
     $("button").text("Submit")
-  
+    // Work day
     const times = [21, 22, 23]
   
     times.forEach(time => {
