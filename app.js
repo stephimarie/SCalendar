@@ -2,12 +2,14 @@ $(document).ready(function () {
 
     console.log(parseInt(moment().format('H')))
     // Current day
-    const currentTime = moment().format('Do YYYY MMMM')
+    const currentTime = moment().format('Do MMMM YYYY')
+    // Current time
     $("#currentTime").text(currentTime)
+    // styling instead of CSS
     $("span").attr("style", "width: 75px")
     $("button").text("Submit")
     // Work day
-    const times = [21, 22, 23]
+    const times = [4,5,6,7,8,9,10,11,12,13,14,15,16,17,18]
   
     times.forEach(time => {
       const timeCheck = window.localStorage.getItem(time)
@@ -35,9 +37,10 @@ $(document).ready(function () {
   
   
   
-  
+    // jQuery for every form on submit function 
     $("form").on("submit", function (e) {
       e.preventDefault()
+      // jQuery for text input connected to time / Value typed
       const time = e.target.querySelector("input").getAttribute("id")
       const text = e.target.querySelector("input").value
   
