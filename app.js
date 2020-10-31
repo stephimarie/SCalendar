@@ -5,7 +5,7 @@ $(document).ready(function () {
     const currentTime = moment().format('Do MMMM YYYY')
     // Current time
     $("#currentTime").text(currentTime)
-    // styling instead of CSS
+    // styling 
     $("span").attr("style", "width: 75px")
     $("button").text("Save")
     // Work day
@@ -27,7 +27,7 @@ $(document).ready(function () {
         // If Time is current
       } else if (currentHour === time) {
         $(`#${time}`).addClass("bg-secondary text-light")
-        // IF Time is future
+        // If Time is future
       } else {
         $(`#${time}`).addClass("bg-success text-light")
       }
