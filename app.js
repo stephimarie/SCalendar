@@ -7,7 +7,7 @@ $(document).ready(function () {
     $("#currentTime").text(currentTime)
     // styling instead of CSS
     $("span").attr("style", "width: 75px")
-    $("button").text("Submit")
+    $("button").text("Save")
     // Work day
     const times = [4,5,6,7,8,9,10,11,12,13,14,15,16,17,18]
     // Time check in local storage 
@@ -43,7 +43,7 @@ $(document).ready(function () {
   
   
     // jQuery for every form on submit function 
-    $("form").on("submit", function (e) {
+    $("form").on("save", function (e) {
       e.preventDefault()
       // jQuery for text input connected to time / Value typed
       const time = e.target.querySelector("input").getAttribute("id")
