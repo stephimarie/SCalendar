@@ -32,6 +32,14 @@ $(document).ready(function () {
         $(`#${time}`).addClass("bg-success text-light")
       }
       
+        // Want to have button changes color based on time 
+        if (currentHour < time) {
+          // Button changes to blue if current time
+          $(`#${button}`).addClass("bg-primary text-light")
+        }
+
+        
+
       // Set items to time - else if greater then 0
       if (timeCheck === null) {
         window.localStorage.setItem(time, "")

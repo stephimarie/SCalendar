@@ -15,9 +15,4 @@ I have modified the starter code and the app runs in the browser and features dy
 
 ```
 
-WHEN I click the save button for that time block
-THEN the text for that event is saved in local storage
-WHEN I refresh the page
-THEN the saved events persist
-
 * Repository contains quality README file with description, screenshot, and link to deployed application
