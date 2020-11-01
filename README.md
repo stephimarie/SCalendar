@@ -11,8 +11,3 @@ I have modified the starter code and the app runs in the browser and features dy
 
 ```
 
-## Acceptance Criteria
-
-```
-
-* Repository contains quality README file with description, screenshot, and link to deployed application
