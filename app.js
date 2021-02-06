@@ -13,7 +13,6 @@ $(document).ready(function () {
     // Time check in local storage 
     times.forEach(time => {
       const timeCheck = window.localStorage.getItem(time)
-  
       const currentHour = moment().hour()
   
       console.log(currentHour)
@@ -32,11 +31,11 @@ $(document).ready(function () {
         $(`#${time}`).addClass("bg-success text-light")
       }
       
-        // Want to have button changes color based on time 
-        if (currentHour < time) {
-          // Button changes to blue if current time
-          $(`#${button}`).addClass("bg-primary text-light")
-        }
+        // // Want to have button changes color based on time 
+        // if (currentHour < time) {
+        //   // Button changes to blue if current time
+        //   $(`#${button}`).addClass("bg-primary text-light")
+        // }
 
         
 
@@ -60,4 +59,6 @@ $(document).ready(function () {
       window.localStorage.setItem(time, text)
     })
   })
+
+
   
